@@ -52,7 +52,7 @@ export default function TrackingFoodLanding() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge variant="secondary" className="bg-primary text-primary-foreground border-primary">
-                  🚀 Novo: Reconhecimento por IA
+                  🚀 Novo: Reconhecimento por Inteligencia Artificial 
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold text-foreground text-balance">
                   Cuide da sua alimentação nunca foi tão
