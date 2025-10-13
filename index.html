@@ -8,7 +8,10 @@
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-		/>
+		/><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<script src="/script.js" defer></script>
 	</head>
 	<body>
 		<header>
@@ -29,8 +32,8 @@
 						<a class="header__nav__link" href="">Preços</a>
 					</nav>
 					<div class="header__login">
-						<button class="botao__acesso">Ja tenho acesso</button>
-						<button class="botao__comecar">Comece agora</button>
+						<button class="botao__acesso" id="btnLogin">Ja tenho acesso</button>
+						<button class="botao__comecar" id="btncreate">Comece agora</button>
 					</div>
 				</div>
 			</div>
@@ -58,7 +61,7 @@
 					</div>
 					<div class="hero__action">
 						<button class="hero__button button__gren">
-							Começar Gratuitamente
+							Escaneie sua Primeira Refeição
 						</button>
 						<button class="hero__button button__emphasis">
 							Ver demonstração
@@ -294,14 +297,14 @@
 				<div class="plans">
 					<div class="choice__plan">
 						<div class="card__plan plan__recomendado">
-							<h3 class="plan__recomendado__title">Recomendado</h3>
+							<h3 class="plan__recomendado__title">Mais Popular</h3>
 							<div class="plan__title">
 								<h2 class="plan__title_title">Plano Plus</h2>
 								<p class="plan__title_paragraph">
 									sem Mais recursos para quem quer praticidade
 								</p>
 								<div class="plan__price">
-									<h3 class="plan__price__value">R$ 0,00</h3>
+									<h3 class="plan__price__value">R$ 15,00</h3>
 									<p class="plan_timer">mes</p>
 								</div>
 							</div>
@@ -348,7 +351,7 @@
 									O plano ideal para levar sua saúde a sério
 								</p>
 								<div class="plan__price">
-									<h3 class="plan__price__value">R$ 0,00</h3>
+									<h3 class="plan__price__value">R$ 25,00</h3>
 									<p class="plan_timer">mes</p>
 								</div>
 							</div>
@@ -389,38 +392,49 @@
 				</div>
 			</div>
 		</main>
+		<div class="chamda">
+			<div class="chamda__conteudo">
+				<h1 class="chamada__h1">Pronto para transformar sua alimentação?</h1>
+				<p class="chamda__p">
+					Junte-se a milhares de pessoas que já estão cuidando melhor da saúde
+					com o Tracking Food
+				</p>
+			</div>
+			<button class="chamda__button">Começar Gratuitamente</button>
+		</div>
 		<footer>
 			<div class="container__footer">
 				<div class="footer__top">
 					<div class="footer__entreprise">
 						<div class="footer_logo">
-							<img src="" alt="Logo da empresa" />
-							<span>Tracking Food</span>
+							<i class="bi bi-apple footer__icon"></i>
+							<span class="footer__span">Tracking Food</span>
 						</div>
-						<p class="footer__paragraph"></p>
+						<p class="footer__paragraph">
+							Cuide da sua alimentação de forma inteligente e simples.
+						</p>
 					</div>
-					<div>
+					<div class="footer__elements">
 						<h4 class="footer__h4">Produto</h4>
 						<ul class="footer__ul">
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
+							<li class="footer__li">Recursos</li>
+							<li class="footer__li">Preços</li>
 						</ul>
 					</div>
-					<div>
+					<div class="footer__elements">
 						<h4 class="footer__h4">suporte</h4>
 						<ul class="footer__ul">
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
+							<li class="footer__li">Central de Ajuda</li>
+							<li class="footer__li">Contato</li>
+							<li class="footer__li">Status</li>
 						</ul>
 					</div>
-					<div>
+					<div class="footer__elements">
 						<h4 class="footer__h4">legal</h4>
 						<ul class="footer__ul">
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
-							<li class="footer__li">a</li>
+							<li class="footer__li">Privacidade</li>
+							<li class="footer__li">Termos</li>
+							<li class="footer__li">Cookies</li>
 						</ul>
 					</div>
 				</div>
@@ -429,5 +443,112 @@
 				</div>
 			</div>
 		</footer>
+		<!-- login -->
+		<div id="loginModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="login__header">
+					<img
+						class="img__logo__login"
+						src="/public/trackingfood.png"
+						alt=""
+						srcset=""
+					/>
+					<h2>Entrar</h2>
+				</div>
+				<form id="loginForm">
+					<div class="form__login">
+						<input
+							class="login__input"
+							type="email"
+							placeholder="E-mail"
+							required
+						/>
+						<input
+							class="login__input"
+							type="password"
+							placeholder="Senha"
+							required
+						/>
+					
+							<a class="password__esqueci" href="">Esqueci minha senha</a>
+					
+						<button class="login__login" type="submit">Entrar</button>
+					</div>
+						<div class="submit__input">
+				</form>
+
+				<p >Não tem conta? <a href="#" id="btnCriarConta" class="botao__criar__conta">Criar conta</a></p>
+						<div class="linha">
+								<div class="linha__vertical"></div>
+								<p>OU</p>
+								<div class="linha__vertical"></div>
+						</div>	
+				<button class="google-btn">
+					<img
+						class="img__google"
+						src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+						alt="Google"
+					/>
+					Entrar com Google
+				</button>
+				</div>
+			</div>
+		</div>
+		<!-- create -->
+		<div id="createModal" class="modal__create">
+			<div class="modal-content">
+				<span class="close__2">&times;</span>
+				<div class="create__header">
+					<img
+						class="img__logo__login"
+						src="/public/trackingfood.png"
+						alt=""
+						srcset=""
+					/>
+					<h2>Cadastre-se </h2>
+				</div>
+				<form id="createForm">
+						<div class="dados__login">
+							<input
+								class="create__input"
+								type="email"
+								placeholder="E-mail"
+								required
+							/>
+							<input
+								class="create__input"
+								type="password"
+								placeholder="Senha"
+								required
+							/>
+						</div>
+						<div class="submit__input">
+						<button class="create__button" type="submit">Criar</button>
+						<div class="already__acount__div">
+						<p class="paragraph__acount">Ja tem conta? </p>
+						<a class="already__acount" href="">Entre no tracking Food</a>
+						</div>
+						<div class="linha">
+								<div class="linha__vertical"></div>
+								<p>OU</p>
+								<div class="linha__vertical"></div>
+						</div>		
+							<button class="google-btn">
+					<img
+						class="img__google"
+						src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+						alt="Google"
+					/>
+					Criar com Google
+				</button>
+					</div>
+					
+					</div>
+				</form>
+
+		
+			</div>
+		</div>
 	</body>
 </html>
