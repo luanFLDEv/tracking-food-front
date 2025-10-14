@@ -76,7 +76,6 @@ button {
 	justify-content: space-between;
 }
 .hero__container {
-	margin: 0 auto;
 	padding: 15px;
 	margin: 10% 0 0 250px;
 }
@@ -112,9 +111,9 @@ button {
 	width: 450px;
 }
 .hero__action {
-	margin-bottom: 2%;
+	margin-bottom: 10px;
 	display: flex;
-	gap: 12%;
+	gap: 50px;
 }
 .hero__button {
 	border: none;
@@ -128,7 +127,7 @@ button {
 .hero__tagline {
 	margin-top: 3%;
 	display: flex;
-	gap: 20%;
+	gap: 30px;
 }
 .button__emphasis {
 	background-color: var(--branco-padrao);
@@ -823,7 +822,7 @@ button {
 }
 .already__acount__div {
 	display: flex;
-	gap: 5-px;
+	gap: 5px;
 }
 .paragraph__acount {
 	font-size: 12px;
