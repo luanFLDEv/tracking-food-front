@@ -1,0 +1,9 @@
+.grapichs {
+	gap: 30px;
+	display: flex;
+}
+.dashboard-main {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

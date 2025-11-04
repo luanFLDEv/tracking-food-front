@@ -1,0 +1,102 @@
+.container-modal {
+	background: white;
+	width: 400px;
+	height: 600px;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	animation: fadeIn 0.3s ease;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+}
+.modal-predominante {
+	display: flex;
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+}
+.close {
+	cursor: pointer;
+	font-size: 18px;
+	margin-right: 20px;
+	text-align: right;
+}
+.modal-header {
+}
+.logo-modal {
+	width: 185px;
+}
+.form-modal {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.form-modal input {
+	width: 240px;
+	height: 28px;
+}
+input::placeholder {
+	text-align: left;
+	font-size: 15px;
+}
+
+.btn-form {
+	height: 35px;
+	width: 200px;
+}
+.login-form-register {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	justify-content: center;
+}
+.login-acounnt {
+	margin: 0 auto;
+}
+.login-acounnt a {
+	text-decoration: none;
+	color: var(--sucesso);
+}
+.linha {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	justify-content: center;
+}
+.linha span {
+	height: 3px;
+	width: 100px;
+	background-color: black;
+}
+.linha p {
+}
+.step2-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+.step2-modal {
+	background-color: #fff;
+	padding: 2rem;
+	border-radius: 10px;
+	width: 90%;
+	max-width: 500px;
+}

@@ -1,0 +1,101 @@
+.section-cards {
+	display: flex;
+	gap: 20px;
+}
+.card-plan {
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid;
+}
+.plans-title {
+	font-size: 40px;
+	margin-top: 100px;
+	text-align: center;
+}
+.plans-paragraph {
+	margin-top: 0px;
+	font-size: 25px;
+	text-align: center;
+}
+.plan-title {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.plan-chamative {
+	margin: 0 auto;
+	font-size: 20px;
+}
+.plan-price {
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.plan-time {
+	margin: 0 auto;
+}
+.plan-p {
+	width: 300px;
+}
+.plan-benefits {
+	margin: 0 auto;
+	padding: 0;
+	flex-direction: column;
+	gap: 30px;
+	text-align: left;
+	list-style-type: none;
+}
+.plan-benetifs-item {
+	gap: 10px;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+.plan-card-text {
+	display: flex;
+	flex-direction: column;
+}
+.plan-price-area {
+}
+.plan-button-area {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+i {
+	font-size: 30px;
+}
+.plan-recomendade {
+	transform: scale(1.05); /* aumenta 5% */
+	box-shadow: 0 2px 6px rgba(3, 182, 21, 0.724),
+		0 8px 24px rgba(0, 176, 70, 0.929);
+	border: 2px solid green;
+}
+.card-plan:hover {
+	transition: 200ms;
+	transform: scale(1.03);
+}
+.plan-recomendade:hover {
+	transform: scale(1.07);
+}
+.btn-plans {
+	border: 1px solid var(--cinza-medio);
+	width: 200px;
+	font-size: 15px;
+}
+.btn-plans:hover {
+	transition: 500ms;
+	color: var(--branco);
+	background-color: var(--verde-escuro);
+}
+.btn-recomendade {
+	color: var(--branco);
+	background-color: var(--verde-escuro);
+}
+.btn-recomendade:hover {
+	transition: 500ms;
+	opacity: 80%;
+}
+.plan-benetifs-item i {
+	color: var(--sucesso);
+	background-color: transparent;
+}

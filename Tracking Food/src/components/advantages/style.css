@@ -1,0 +1,45 @@
+.advantagens {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.card-advantagens {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	width: 200px;
+	flex-direction: column;
+}
+.card-advantagens:hover {
+	transition: 400ms;
+	box-shadow: 0 10px 50px rgba(100, 255, 61, 0.3);
+}
+.cardsepara {
+	gap: 20px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+}
+.card-points {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--verde-claro);
+}
+.card-title {
+	font-size: 14px;
+}
+.card-paragraph {
+}
+.card-balance {
+	opacity: 50%;
+	width: 200px;
+}
+.text-benefits h3 {
+	font-size: 40px;
+	width: 340px;
+}
+.text-benefits p {
+	width: 400px;
+	font-size: 24px;
+}

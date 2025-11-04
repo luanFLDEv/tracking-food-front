@@ -1,0 +1,38 @@
+:root {
+	/* 🎨 Cores principais */
+	--verde-principal: #007a4d; /* tom baseado na logo */
+	--verde-escuro: #005c38;
+	--verde-claro: #4caf7c;
+	/* ⚪ Neutras */
+	--branco: #ffffff;
+	--cinza-claro: #eeeeee;
+	--cinza-medio: #b0b0b0;
+	--preto: #1a1a1a;
+
+	/* 🌈 Cores de feedback (opcional) */
+	--sucesso: #4caf50;
+	--erro: #e53935;
+	--aviso: #ffc107;
+
+	/* ✍️ Tipografia */
+	--fonte-principal: 'Poppins', Arial, sans-serif;
+
+	/* 🅰️ Tamanhos de fonte */
+	--tamanho-titulo: 2.5rem; /* h1 */
+	--tamanho-h2: 2rem;
+	--tamanho-h3: 1.5rem;
+	--tamanho-h4: 1.2rem;
+	--tamanho-paragrafo: 1rem;
+	--tamanho-botao: 0.95rem;
+
+	/* 🔤 Peso das fontes */
+	--peso-bold: 700;
+	--peso-medium: 500;
+	--peso-normal: 400;
+}
+body {
+	font-family: var(--fonte-principal);
+}
+button {
+	cursor: pointer;
+}

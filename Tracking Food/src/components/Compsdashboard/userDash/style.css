@@ -1,0 +1,15 @@
+.user {
+	width: 400px;
+	padding: 0.4em;
+	border: 2px solid var(--sucesso);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.name-user {
+	text-align: center;
+	font-size: 30px;
+}
+.dados-user {
+	font-size: 22px;
+}

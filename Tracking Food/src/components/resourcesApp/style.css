@@ -1,0 +1,51 @@
+.recurses {
+	margin-top: 100px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.recurses-title {
+	font-weight: 800;
+	font-size: 34px;
+}
+.recurses-paragraph {
+	font-size: 20px;
+}
+.card {
+	border-radius: 8px;
+	text-align: center;
+	background-color: var(--cinza-claro);
+	padding: 2em;
+	width: 350px;
+	height: 200px;
+}
+.card-recurses {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.card h3 {
+	margin: 0 auto;
+}
+.card i {
+	background-color: var(--verde-claro);
+	padding: 7px;
+	font-size: 25px;
+	margin: 0 auto;
+}
+.card-title {
+	font-size: 25px;
+	margin: 0 auto;
+}
+.card-paragraph {
+	font-size: 20px;
+}
+.card-recurses i {
+	color: var(--branco);
+}
+.card-recurses:hover {
+	transition: 400ms;
+	box-shadow: 0 10px 50px rgba(100, 255, 61, 0.3);
+}
+.card-recurses i:hover {
+	background-color: var(--verde-escuro);
+}

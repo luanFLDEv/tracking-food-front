@@ -1,0 +1,22 @@
+.dash-ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+}
+.dash-li {
+	width: 130px;
+	height: 205px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.dashboard {
+	display: flex;
+
+	flex-direction: column;
+	text-align: left;
+
+	border-right: 1px solid var(--cinza-medio);
+}
+.dashboard h2 {
+	margin-left: 30px;
+}
